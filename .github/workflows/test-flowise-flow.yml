@@ -34,5 +34,5 @@ jobs:
       - name: main
         run: npx flowise start &
           wait-on tcp:3000 &&
-          OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} npm run load &&
+          OPENAI_API_KEY=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 npm run load &&
           npm test
